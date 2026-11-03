@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<title>Anilar</title><link rel="stylesheet" href="../style.css">
+</head>
+<body><main>
+<h1>Установите Anilar</h1>
+<p>Затем снова отсканируйте код на экране телевизора.</p>
+<p lang="en" class="muted">Install Anilar, then scan the code on your TV again.</p>
+<p>
+  <a class="button" id="play" href="https://play.google.com/store/apps/details?id=app.anilar">Google Play</a>
+</p>
+<script>
+  // Данные сопряжения лежат после # и никуда не отправляются: скрипт смотрит
+  // только на систему устройства и убирает их из адреса перед переходом.
+  history.replaceState(null, '', location.pathname);
+  if (/android/i.test(navigator.userAgent)) {
+    location.replace(document.getElementById('play').href);
+  }
+</script>
+</main></body>
+</html>

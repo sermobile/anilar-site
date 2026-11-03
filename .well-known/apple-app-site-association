@@ -1,0 +1,8 @@
+{
+  "applinks": {
+    "details": [{
+      "appIDs": ["REPLACE_TEAM_ID.app.anilar"],
+      "components": [{ "/": "/pair*" }]
+    }]
+  }
+}
